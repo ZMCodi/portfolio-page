@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+
+.navbar {
+    position: sticky;
+    width: 100vw;
+    background-color: darkblue;
+    top: 0;
+    left: 0;
+    padding: 8px;
+    height: 10vh;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8%;
+    color: yellow;
+    right: 0;
+    padding-right: 5em;
+    width: 60%;
+    position: absolute;
+}
+
+.hero {
+    height: 91vh;
+    width: 100%;
+    background-color: purple;
+}
+
+.heading {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading-line1 {
+    font-size: 6rem;
+}
+
+.heading-line2 {
+    font-size: 2rem;
+
+}
+
+.about {
+    height: 200vh;
+}
+
+.navbar div {
+    color: yellow;
+    font-size: 2em;
+    text-justify: center;
+    position: absolute;
+    left: 5%;
+    top: 20%
+}
