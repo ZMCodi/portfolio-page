@@ -26,6 +26,16 @@ body {
     padding: 8px;
     height: 10vh;
     z-index: 999;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar div {
+    color: yellow;
+    font-size: 2em;
+    align-self: center;
+    position: relative;
+    left: 5%;
 }
 
 .navbar ul {
@@ -37,6 +47,7 @@ body {
     padding-right: 5em;
     width: 60%;
     position: absolute;
+    align-self: center;
 }
 
 .hero {
@@ -62,15 +73,6 @@ body {
 .heading-line2 {
     font-size: 2rem;
 
-}
-
-.navbar div {
-    color: yellow;
-    font-size: 2em;
-    text-justify: center;
-    position: absolute;
-    left: 5%;
-    top: 20%
 }
 
 .about {
