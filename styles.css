@@ -8,6 +8,7 @@ body {
     margin: 0;
 }
 
+
 .navbar {
     position: sticky;
     width: 100vw;
@@ -54,10 +55,6 @@ body {
 
 }
 
-.about {
-    height: 200vh;
-}
-
 .navbar div {
     color: yellow;
     font-size: 2em;
@@ -65,4 +62,38 @@ body {
     position: absolute;
     left: 5%;
     top: 20%
+}
+
+.about {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.summary {
+    height: 100%;
+    border: 2px solid;
+    width: 50%;
+}
+
+.skills {
+    height: 100%;
+    border: 2px solid;
+    width: 50%;
+}
+
+.projects {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid;
+}
+
+
+.contact {
+    height: 100vh;
+    width: 100%;
+    border: 2px solid;
 }
