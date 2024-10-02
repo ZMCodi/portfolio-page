@@ -1,5 +1,6 @@
 :root {
     --main-bg: #f4f4f9;
+    --secondary-color: rgb(211, 211, 211);
     --accent-color: #ffffff;
     --main-font: #333333;
     --heading-font: "Raleway", sans-serif;
@@ -175,13 +176,34 @@ article > a:hover {
     font-size: 1.6em;
     padding-top: 10%;
     color: var(--main-font);
+    width: 70%;
 }
+
+.certificate {
+    font-size: 0.9em;
+    background-color: var(--secondary-color);
+    border: 1px var(--main-font) solid;
+    padding: 1%;
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-font)
+}
+
+.certificate:hover {
+    text-decoration: underline;
+}
+
+.certificate:visited {
+    color: var(--main-font)
+}
+
+
 
 /* Projects section */
 
 .projects {
     width: 100%;
-    background-color: lightgrey;
+    background-color: var(--secondary-color);
     padding-top: 0.1%;
 }
 
