@@ -1,6 +1,15 @@
+:root {
+    --main-bg: #f4f4f9;
+    --accent-color: #ffffff;
+    --main-font: #333333;
+    --heading-font: "Raleway", sans-serif;
+    --navbar-color: #1f2937;
+    --navbar-text: #ffffff;
+    --body-font: "Roboto", Tahoma;
+}
+
 * {
-    box-sizing: border-box;
-    
+    box-sizing: border-box; 
 }
 
 html {
@@ -15,14 +24,18 @@ body {
 /* navbar */
 
 .nav-link {
-    color: yellow;
+    color: var(--navbar-text);
     text-decoration: none;
+}
+
+.nav-link:visited {
+    color: var(--navbar-text);
 }
 
 .navbar {
     position: sticky;
     width: 100vw;
-    background-color: darkblue;
+    background-color: var(--navbar-color);
     top: 0;
     left: 0;
     padding: 8px;
@@ -33,23 +46,25 @@ body {
 }
 
 .navbar div {
-    color: yellow;
+    color: var(--navbar-text);
     font-size: 2em;
     align-self: center;
     position: relative;
     left: 5%;
+    font-family: var(--heading-font);
 }
 
 .navbar ul {
     display: flex;
     justify-content: flex-end;
     gap: 8%;
-    color: yellow;
     right: 0;
     padding-right: 5em;
     width: 60%;
     position: absolute;
     align-self: center;
+    font-family: var(--body-font);
+    list-style-type: none;
 }
 
 /* Welcome page */
@@ -57,7 +72,7 @@ body {
 .hero {
     height: 91vh;
     width: 100%;
-    background-color: purple;
+    background-color: var(--main-bg);
 }
 
 .heading {
@@ -72,11 +87,14 @@ body {
 
 .heading-line1 {
     font-size: 6rem;
+    color: var(--main-font);
+    font-family: var(--heading-font);
 }
 
 .heading-line2 {
     font-size: 2rem;
-
+    color: var(--main-font);
+    font-family: var(--body-font);
 }
 
 /* About section */
@@ -84,7 +102,7 @@ body {
 .about {
     height: 100vh;
     width: 100%;
-    background-color: aqua;
+    background-color: var(--main-bg);
     display: flex;
     align-items: center;
 }
@@ -101,6 +119,8 @@ body {
 .summary > h1 {
     font-size: 3em;
     position: relative;
+    color: var(--main-font);
+    font-family: var(--heading-font);
 }
 
 .brief {
@@ -108,6 +128,18 @@ body {
     font-size: 1.5em;
     text-align: justify;
     text-justify: inter-word;
+    color: var(--main-font);
+    font-family: var(--body-font);
+}
+
+article > a:link, a:visited {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+article > a:hover {
+    color: #f4f4f9;
+    background-color: #3b82f6;
 }
 
 .skills {
@@ -117,6 +149,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: var(--heading-font);
 }
 
 .languages {
@@ -131,6 +164,8 @@ body {
 
 .language {
     font-size: 8em;
+    z-index: 1;
+    color: var(--main-font);
 }
 
 .certificates {
@@ -139,20 +174,23 @@ body {
     margin: 2%;
     font-size: 1.6em;
     padding-top: 10%;
+    color: var(--main-font);
 }
 
 /* Projects section */
 
 .projects {
     width: 100%;
-    background-color: crimson;
-    border: 0.0001px solid; /*idk how this works but don't remove this*/
+    background-color: lightgrey;
+    padding-top: 0.1%;
 }
 
 .projects > h1 {
     text-align: center;
     font-size: 3em;
     padding-top: 5%;
+    color: var(--main-font);
+    font-family: var(--heading-font);
 }
 
 .personal-projects {
@@ -167,7 +205,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 40%;
-    background-color: brown;
+    background-color: var(--accent-color);
     border-radius: 10%;
     margin-bottom: 3%;
 }
@@ -183,6 +221,8 @@ body {
 .project-caption {
     font-size: 1.3em;
     margin-bottom: 3%;
+    color: var(--main-font);
+    font-family: var(--body-font);
 }
 
 /* Contact Me */
@@ -190,12 +230,16 @@ body {
 .contact {
     width: 100%;
     padding-bottom: 7%;
+    padding-top: 1%;
+    background-color: var(--main-bg);
 }
 
 .contact > h1 {
     font-size: 2.5em;
     text-align: center;
     margin-bottom: 3%; 
+    color: var(--main-font);
+    font-family: var(--heading-font);
 }
 
 .socials {
@@ -208,4 +252,5 @@ body {
 .social {
     font-size: 5em;
     color: black;
+    color: var(--main-font);
 }
