@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio page</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 </head>
 <body>
         <main class="hero">
@@ -18,7 +19,7 @@
             <ul>
                 <li class="nav-about"><a class="nav-link" href="#about">ABOUT ME</a></li>
                 <li class="nav-projects"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                <li class="nav-contact">CONTACT ME</li>
+                <li class="nav-contact"><a class="nav-link" href="#contact">CONNECT</a></li>
             </ul>
         </nav>
         <section class="about" id="about">
@@ -38,16 +39,17 @@
             <div class="skills">
                 <h1>My Languages and Certificates</h1>
                 <div class="languages">
-                    <img class='html' src="https://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Other-html-5-icon.png">
-                    <img class='css' src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/2048px-CSS3_logo.svg.png">
-                    <img class='javascript' src="https://static.vecteezy.com/system/resources/previews/027/127/463/original/javascript-logo-javascript-icon-transparent-free-png.png">
-                    <img class='python' src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png">
+                    <i class="fab fa-html5 language"></i>
+                    <i class="fab fa-css3-alt language"></i>
+                    <i class="fab fa-js language"></i>
+                    <i class="fab fa-python language"></i>
                 </div>
                 <div class="certificates">no certs yet... :(</div>
                 <h4>and more coming soon...</h4>
             </div>
         </section>
-        <section class="projects" id="projects">
+        <div id="projects"></div>
+        <section class="projects" >
             <h1>My Projects</h1>
             <div class="personal-projects">
                 <figure class="project">
@@ -69,8 +71,15 @@
             </div>
            
         </section>
-        <section class="contact">
-            
+        <section class="contact" id="contact">
+            <h1>Connect With Me!</h1>
+            <div class="socials">
+                <a class='social-link' href='http://www.github.com/ZMCodi' target="_blank"><i class="fab fa-github social"></i></a>
+                <a class='social-link' href='http://www.linkedin.com/in/zmcodi' target="_blank"><i class="fab fa-linkedin social"></i></a>
+                <a class='social-link' href='http://www.instagram.com/zmcodi' target="_blank"><i class="fab fa-instagram social"></i></a>
+                <a class='social-link' href='http://www.x.com/zmcodi' target="_blank"><i class="fab fa-twitter social"></i></a>
+                <a class='social-link' href='mailto: zaim.mohsin@gmail.com' target="_blank"><i class="fas fa-envelope social"></i></a>
+            </div>
         </section>
     
 </body>
