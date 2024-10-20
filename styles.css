@@ -184,6 +184,7 @@ article > a:hover {
     background-color: var(--secondary-color);
     border: 1px var(--main-font) solid;
     padding: 1%;
+    margin-bottom: 2%;
     text-align: center;
     text-decoration: none;
     color: var(--main-font)
