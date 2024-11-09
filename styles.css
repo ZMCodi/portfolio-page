@@ -157,10 +157,10 @@ article > a:hover {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10%;
+    gap: 5%;
     flex-wrap: wrap;
     position: relative;
-    top: 7%;
+
 }
 
 .language {
