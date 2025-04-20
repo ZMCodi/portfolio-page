@@ -3,103 +3,336 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio page</title>
+    <title>Zaim | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-        <main class="hero">
-            <section class="heading">
-                <div class="heading-line1">Hello my name is Zaim...</div>
-                <div class="heading-line2">...but you can call me Codi</div>
-            </section>
-        </main>
+    <header>
         <nav class="navbar">
-            <div>My Portfolio Page</div>
-            <ul>
-                <li class="nav-about"><a class="nav-link" href="#about">ABOUT ME</a></li>
-                <li class="nav-projects"><a class="nav-link" href="#projects">PROJECTS</a></li>
-                <li class="nav-contact"><a class="nav-link" href="#contact">CONNECT</a></li>
+            <div class="logo">ZM</div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#projects">Projects</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <section class="about" id="about">
-            <div class="summary">
-                <h1>About Me</h1>
-                <article class="brief">I am a first year BSc (Hons) Computer Science
-                    and Mathematics student at the University of Manchester. I 
-                    developed an interest in coding since I got my first laptop
-                    at 16. Since then, I have started to learn programming on my own
-                    through online resources like <a target='_blank' href='https://www.freecodecamp.org/'>
-                    freeCodeCamp</a>. Currently I am looking to work in finance, preferably as a quant
-                    so I will have to work a lot harder to learn the technologies and understand
-                    the mathematical concepts.
-                </article>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="greeting">Hello, I'm</span>
+                <span class="name">Zaim</span>
+                <span class="subtitle">But you can call me Codi</span>
+            </h1>
+            <p class="hero-description">Computer Science & Mathematics Student | Aspiring Quant</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
             </div>
-            <div class="skills">
-                <h1>Languages and Certificates</h1>
-                <div class="languages">
-                    <i class="fab fa-html5 language"></i>
-                    <i class="fab fa-css3-alt language"></i>
-                    <i class="fab fa-js language"></i>
-                    <i class="fab fa-python language"></i>
-                    <i class="fas fa-database language"></i>
+        </div>
+        <div class="hero-shape"></div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="about-container">
+            <div class="about-content">
+                <p class="about-text">
+                    I am a first year BSc (Hons) Computer Science and Mathematics student at the University of Manchester. My 
+                    journey in coding began at age 16 when I received my first laptop. Since then, I've been self-learning 
+                    programming through platforms like <a href='https://www.freecodecamp.org/' target='_blank' rel="noopener">freeCodeCamp</a>.
+                </p>
+                <p class="about-text">
+                    Currently, I'm focused on building a career in finance as a quantitative analyst, which requires a solid
+                    foundation in both advanced mathematics and cutting-edge technologies. I'm constantly expanding my knowledge
+                    in algorithmic trading, financial modeling, and data analysis.
+                </p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Certificates</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">6+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
                 </div>
-                <div class="certificates">
-                    <a class="certificate" target="_blank" href="https://www.freecodecamp.org/certification/ZMCodi/responsive-web-design">Responsive Web Design by freeCodeCamp</a>
-                    <a class="certificate" target="_blank" href="https://www.freecodecamp.org/certification/ZMCodi/javascript-algorithms-and-data-structures-v8">JS Algos and Data Structures by freeCodeCamp</a>
-                    <a class="certificate" target="_blank" href="https://www.freecodecamp.org/certification/ZMCodi/relational-database-v8">Relational Database by freeCodeCamp</a>
-                    <a class="certificate" target="_blank" href="https://www.freecodecamp.org/certification/ZMCodi/scientific-computing-with-python-v7">Scientific Computing by freeCodeCamp</a>
+            </div>
+            <div class="skills-container">
+                <h3 class="skills-title">Technical Skills</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-js"></i>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL</span>
+                    </div>
                 </div>
-                <h4>and more coming soon...</h4>
+                <h3 class="cert-title">Certifications</h3>
+                <div class="cert-list">
+                    <a class="cert-item" target="_blank" rel="noopener" href="https://www.freecodecamp.org/certification/ZMCodi/responsive-web-design">
+                        <i class="fas fa-certificate"></i>
+                        <span>Responsive Web Design</span>
+                    </a>
+                    <a class="cert-item" target="_blank" rel="noopener" href="https://www.freecodecamp.org/certification/ZMCodi/javascript-algorithms-and-data-structures-v8">
+                        <i class="fas fa-certificate"></i>
+                        <span>JS Algorithms & Data Structures</span>
+                    </a>
+                    <a class="cert-item" target="_blank" rel="noopener" href="https://www.freecodecamp.org/certification/ZMCodi/relational-database-v8">
+                        <i class="fas fa-certificate"></i>
+                        <span>Relational Database</span>
+                    </a>
+                    <a class="cert-item" target="_blank" rel="noopener" href="https://www.freecodecamp.org/certification/ZMCodi/scientific-computing-with-python-v7">
+                        <i class="fas fa-certificate"></i>
+                        <span>Scientific Computing with Python</span>
+                    </a>
+                </div>
             </div>
-        </section>
-        <div id="projects"></div>
-        <section class="projects" >
-            <h1>My Projects</h1>
-            <div class="personal-projects">
-                <figure class="project">
-                    <a target="_blank" href="https://flapp.vercel.app"><img class='project-img' alt='Homepage for the financial analysis app' src="assets/homepage.png"></a>
-                    <figcaption class="project-caption">Financial analysis app</figcaption>
-                </figure>
-                <figure class="project">
-                    <a target="_blank" href="https://github.com/ZMCodi/portfolio-optimizer"><img class='project-img' alt='Efficient frontier diagram generated from the portfolio optimizer program' src="assets/EF.png"></a>
-                    <figcaption class="project-caption">Portfolio Optimizer using Sharpe Ratio</figcaption>
-                </figure>
-                <figure class="project">
-                    <a target="_blank" href="https://github.com/ZMCodi/stock-db"><img class='project-img' alt='Database of stock prices' src="assets/stockdb.png"></a>
-                    <figcaption class="project-caption">Database of stock prices</figcaption>
-                </figure>
-                <figure class="project">
-                    <a target="_blank" href="https://github.com/ZMCodi/FinancialAnalysis"><img class='project-img' alt='Financial analysis graphs created using the library' src="assets/FA.png"></a>
-                    <figcaption class="project-caption">Financial analysis and plotting library</figcaption>
-                </figure>
-                <figure class="project">
-                    <a target='_blank' href='https://github.com/ZMCodi/sky_jump'><img class='project-img' alt='Screenshots from the vertical platformer game' src="assets/sky-jump.jpeg"></a>
-                    <figcaption class="project-caption">Endless vertical platformer game sky jump</figcaption>
-                </figure>
-                <figure class="project">
-                    <a target="_blank" href="https://zmcodi.github.io/pokedex/"><img class='project-img' alt="my pokedex project" src="assets/pokedex.png"></a>
-                    <figcaption class="project-caption">Pokedex</figcaption>
-                </figure>
-                <figure class="project">
-                    <img class='project-img' alt='Space for incoming projects' src="https://lh6.googleusercontent.com/Bu-pRqU_tWZV7O3rJ5nV1P6NjqFnnAs8kVLC5VGz_Kf7ws0nDUXoGTc7pP87tyUCfu8VyXi0YviIm7CxAISDr2lJSwWwXQxxz98qxVfMcKTJfLPqbcfhn-QEeOowjrlwX1LYDFJN">
-                    <figcaption class="project-caption">Coming soon...</figcaption>
-                </figure>
+        </div>
+    </section>
+
+    <section class="projects-section" id="projects">
+        <div class="section-header">
+            <h2 class="section-title">My Projects</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/homepage.png" alt="Financial Analysis App">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://flapp.vercel.app" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Financial Analysis App</h3>
+                    <p class="project-description">A web application for analyzing financial data and market trends.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                </div>
             </div>
-        </section>
-        <section class="contact" id="contact">
-            <h1>Connect With Me!</h1>
-            <div class="socials">
-                <a class='social-link' href='http://www.github.com/ZMCodi' target="_blank"><i class="fab fa-github social"></i></a>
-                <a class='social-link' href='http://www.linkedin.com/in/zmcodi' target="_blank"><i class="fab fa-linkedin social"></i></a>
-                <a class='social-link' href='http://www.instagram.com/zmcodi' target="_blank"><i class="fab fa-instagram social"></i></a>
-                <a class='social-link' href='http://www.x.com/zmcodi' target="_blank"><i class="fab fa-twitter social"></i></a>
-                <a class='social-link' href='mailto: zaim.mohsin@gmail.com' target="_blank"><i class="fas fa-envelope social"></i></a>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/EF.png" alt="Portfolio Optimizer">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/ZMCodi/portfolio-optimizer" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Portfolio Optimizer</h3>
+                    <p class="project-description">Investment portfolio optimization tool using Sharpe Ratio.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Finance</span>
+                        <span class="tag">Data Analysis</span>
+                    </div>
+                </div>
             </div>
-        </section>
-    
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/stockdb.png" alt="Stock Database">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/ZMCodi/stock-db" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Stock Database</h3>
+                    <p class="project-description">Database of historical stock prices for financial analysis.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/FA.png" alt="Financial Analysis Library">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/ZMCodi/FinancialAnalysis" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Financial Analysis Library</h3>
+                    <p class="project-description">Custom library for financial analysis and data visualization.</p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Data Viz</span>
+                        <span class="tag">Finance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/sky-jump.jpeg" alt="Sky Jump Game">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://github.com/ZMCodi/sky_jump" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Sky Jump</h3>
+                    <p class="project-description">Endless vertical platformer game with physics and scoring system.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Game Dev</span>
+                        <span class="tag">HTML5</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">
+                    <img src="assets/pokedex.png" alt="Pokedex">
+                    <div class="project-overlay">
+                        <div class="project-links">
+                            <a href="https://zmcodi.github.io/pokedex/" target="_blank" rel="noopener" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/ZMCodi/pokedex" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <h3 class="project-title">Pokedex</h3>
+                    <p class="project-description">Interactive Pokedex with dynamic data and search functionality.</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">API</span>
+                        <span class="tag">CSS3</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+        <div class="section-header">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="section-divider"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <p class="contact-text">Feel free to reach out for collaborations, opportunities, or just to say hello!</p>
+                <a href="mailto:zaim.mohsin@gmail.com" class="contact-email">
+                    <i class="fas fa-envelope"></i>
+                    zaim.mohsin@gmail.com
+                </a>
+            </div>
+            <div class="social-links">
+                <a href="http://www.github.com/ZMCodi" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/zmcodi" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="http://www.instagram.com/zmcodi" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="http://www.x.com/zmcodi" target="_blank" rel="noopener" class="social-link" aria-label="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2025 Zaim "Codi" Mohsin | Portfolio</p>
+            <p class="footer-credits">BSc Computer Science & Mathematics Student</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple navigation toggle for mobile
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector('.nav-menu').classList.remove('active');
+                document.querySelector('.nav-toggle').classList.remove('active');
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add active class to navigation links based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
