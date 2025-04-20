@@ -506,6 +506,11 @@ button, .btn {
     transition: var(--transition);
 }
 
+[data-theme="dark"] .cert-item {
+    background-color: var(--dark-bg);
+    border: 1px solid var(--border-color);
+}
+
 .cert-item i {
     font-size: 18px;
     color: var(--primary-color);
@@ -521,8 +526,16 @@ button, .btn {
     color: var(--text-light);
 }
 
+[data-theme="dark"] .cert-item:hover {
+    color: var(--dark-bg);
+}
+
 .cert-item:hover i {
     color: var(--text-light);
+}
+
+[data-theme="dark"] .cert-item:hover i {
+    color: var(--dark-bg);
 }
 
 /* Projects Section */
